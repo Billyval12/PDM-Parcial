@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tittle_size">50sp</dimen>
+    <dimen name="editText_size">80dp</dimen>
+    <dimen name="text_size">17sp</dimen>
+</resources>

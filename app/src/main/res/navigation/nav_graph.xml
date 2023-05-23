@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/aerolineFragment">
+
+    <fragment
+        android:id="@+id/aerolineFragment"
+        android:name="com.valencia.aerolinetracker.ui.AerolineFragment"
+        android:label="fragment_aeroline_list"
+        tools:layout="@layout/fragment_aeroline_list" >
+        <action
+            android:id="@+id/action_aerolineFragment_to_newAerolineFragment"
+            app:destination="@id/newAerolineFragment" />
+        <action
+            android:id="@+id/action_aerolineFragment_to_aerolineListFragment"
+            app:destination="@id/aerolineListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newAerolineFragment"
+        android:name="com.valencia.aerolinetracker.ui.NewAerolineFragment"
+        android:label="NewAerolineFragment" />
+    <fragment
+        android:id="@+id/aerolineListFragment"
+        android:name="com.valencia.aerolinetracker.ui.AerolineListFragment"
+        android:label="AerolineListFragment" />
+</navigation>
